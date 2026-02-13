@@ -20,20 +20,20 @@ const words = [
   "Ajith 💙","Ajith 💙","Ajith 💙","Ajith 💙",
   "Likidha 💛","Likidha 💛","Likidha 💛","Likidha 💛",
   "Ajith x Likidha 💘","Ajith x Likidha 💘","Ajith x Likidha 💘",
-  "Kanmani 🌙","my Moon 🌙","BTS queen 💜","crystal girl ✨",
+  "Kanmani 🌙","my Moon 🌙","BTS queen 💜","Crystal girl ✨", " Azhagiye 💘 ",
   "k-drama mode 🎬","saranghae 💞","보고싶어 🥺","사랑해 💗",
   "🫰","🫶","💘","✨","🌙","☀️","⭐","💎",
-  `"Likidha - Like Ajith cooking skills, mature boi, sweet heart"`,
-  `"Likidha - Im soooooo happppyyyyyyy that you called me🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🫰🫰🫰🫰🫰🫰🫰🫶🫶🫶🫶🫶🫶"`,
-  `"Likidha - Na rombaaa surprised plus happy ah irundhe...we got to see virtually nu. Nanne yosichutu irundhe ena pesuradhu starting nu...yosichute phone pathe...nee call panningaa🥺🥺🥰"`,
-  `"Likidha - U are still good looking. Im not sure about what u mean about great human being. As for as I know, you are good to me, ur and my family."`,
-  `"Likidha - I wish you were here but it's totally fine. I will be less nervous lol😂😂"`,
-  `"Likidha - Enaku cooking theriyadhu nu frnd solitu irundha...apo dan sonne like u know cooking..later nannu kathupenu"`,
-  `"Likidha - Lol epdiiii..idhu dan nannu yosichutu irundhe"`,
-  `"Likidha - Ur mom would be proud of you...nengale ellame handle panradh"`,
-  `"Likidha - Lol you are a gem🥺🥺🥺....ellame theriyum polaiyeee"`,
-  `"Ajith - I'm glad that I meet u. Actually I felt special when u said u enaku call panirukalam la ( while I'm telling dad I cried while giving blood)"`,
-  `"Ajith - Take ur time no issue. Ask million questions to mee.i want full you not the half"`,
+  `"Likidha- Like Ajith cooking skills, mature boi, sweet heart"`,
+  `"Likidha- Im soooooo happppyyyyyyy that you called me🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🫰🫰🫰🫰🫰🫰🫰🫶🫶🫶🫶🫶🫶"`,
+  `"Likidha- Na rombaaa surprised plus happy ah irundhe...we got to see virtually nu. Nanne yosichutu irundhe ena pesuradhu starting nu...yosichute phone pathe...nee call panningaa🥺🥺🥰"`,
+  `"Likidha- U are still good looking. Im not sure about what u mean about great human being. As for as I know, you are good to me, ur and my family."`,
+  `"Likidha- I wish you were here but it's totally fine. I will be less nervous lol😂😂"`,
+  `"Likidha- Enaku cooking theriyadhu nu frnd solitu irundha...apo dan sonne like u know cooking..later nannu kathupenu"`,
+  `"Likidha- Lol epdiiii..idhu dan nannu yosichutu irundhe"`,
+  `"Likidha- Ur mom would be proud of you...nengale ellame handle panradh"`,
+  `"Likidha- Lol you are a gem🥺🥺🥺....ellame theriyum polaiyeee"`,
+  `"Ajith- I'm glad that I meet u. Actually I felt special when u said u enaku call panirukalam la (while I'm telling dad I cried while giving blood)"`,
+  `"Ajith- Take ur time no issue. Ask million questions to mee.I want full you not the half"`,
   `"My Gem 💎"`,
   "en uyire","thangam","chellam","kanna","pattu",
   "ente sundari","ente ponne","njan ninne","umma 😘",
@@ -431,12 +431,12 @@ window.addEventListener('resize', ()=>{
  ***********************/
 const chapters = [
   { n:1, name:"Meetup", emoji:"🌹", secret:"That first moment… ‘oh damn…’ 😳💘" },
-  { n:2, name:"Attraction", emoji:"🧲", secret:"My brain: calm. My heart: BTS concert 💜😭" },
+  { n:2, name:"Attraction", emoji:"🧲", secret:"My brain: calm. My heart: You 💜😭" },
   { n:3, name:"Bonding", emoji:"🫶", secret:"When you laugh… my stress disappears instantly 😭" },
   { n:4, name:"Trust", emoji:"🛡️", secret:"I’ll protect your peace. Pinky promise 🤞💗" },
   { n:5, name:"Care", emoji:"🌷", secret:"Eat well, sleep well… I’m watching 😌🌙" },
   { n:6, name:"Support", emoji:"🧩", secret:"I’m your safe place… always 💞" },
-  { n:7, name:"Love", emoji:"💗", secret:"You’re my favorite notification 😭📱" },
+  { n:7, name:"Love", emoji:"💗", secret:"You’re my favorite notification 📱" },
   { n:8, name:"Growth", emoji:"🌱", secret:"We’ll level up together… slowly, strongly 💪✨" },
   { n:9, name:"Forever", emoji:"♾️", secret:"Even on bad days… I choose you every time 💘" }
 ];
@@ -651,7 +651,7 @@ function openCDPlayerTab(trackTitle, src){
     <div class="top">
       <div>
         <div class="title">🎧 ${safeTitle}</div>
-        <div class="hint">For Likidha 🌙 (CD-player mode)</div>
+        <div class="hint">For Likidha 🫰🫶🌙 </div>
       </div>
       <button class="btn btn2" id="closeBtn">Close ✕</button>
     </div>
@@ -766,7 +766,7 @@ function showGiftDetail(type){
   if(type === "voice"){
     giftDetailLabel.textContent = "My Voice 🎤";
     giftArt.innerHTML = `<span>🎤</span><span>🎶</span><span>💜</span>`;
-    giftMain.textContent = "For Likidha 🌙";
+    giftMain.textContent = "For Likidha 🫰🫶🌙";
     giftSub.textContent = "Two songs… only for you. Tap to open CD player 💘";
     voiceControls.style.display = "block";
   }
@@ -775,7 +775,7 @@ function showGiftDetail(type){
     stopAudio();
     giftDetailLabel.textContent = "Teddy Date 🧸";
     giftArt.innerHTML = `<span>🧸</span><span>💃</span><span>🧸</span>`;
-    giftMain.textContent = "Teddy date unlocked 😭💘";
+    giftMain.textContent = "Teddy date unlocked 💘";
   }
 }
 
@@ -830,7 +830,7 @@ I don’t want to replace you. I just want us to be better. Better at understand
 
 And I choose you not once, not twice, but every single time.
 
-I don’t want a new story. I just want to make our story stronger, more beautiful, and forever lasting.`
+I don’t want a new story. I just want to make our story stronger, more beautiful, and forever lasting 🫰🫶💘<.`
   },
 
   2: {
@@ -856,7 +856,7 @@ I’d rather hear the truth than feel ignored.`
   },
 
   4: {
-    title: "Kanmani 🥺",
+    title: "Kanmani ✨ ",
     body: `I may never be able to tell you this.
 
 You were never a choice. You were the decision I made without fear.
@@ -880,11 +880,11 @@ I got attached so fast because you were the first person to make me feel a spark
 
 I’m humble enough to know I’m replaceable, but confident enough to know my soul is genuine.
 
-And you won’t find that anywhere easily.`
+And you won’t find that anywhere easily 🫰🫶💘<.`
   },
 
   6: {
-    title: "Kanmani 🥺 (Marriage One)",
+    title: "Azhagiye 💗",
     body: `One day I’ll marry you, and we’ll build a life from small things that only make sense to us.
 
 Inside jokes, shared prayers, quiet nights, and long talks when sleep doesn’t come.
@@ -893,7 +893,7 @@ We’ll mess up sometimes, learn each other slowly, and grow together through it
 
 Life won’t always be easy, but I know this much:
 
-I will keep choosing you even on the hard days.
+I will keep choosing you even on the hard days🫰🫶💘<.
 
 That’s my promise.
 
@@ -920,7 +920,7 @@ Think about the nights I held you, the plans we made together, the version of yo
 
 Are you sure you want to live without the me who once felt like home?
 
-Sometimes it’s not the relationship that’s broken — it’s the communication, the understanding, and the effort.`
+Sometimes it’s not the relationship that’s broken — it’s the communication, the understanding, and the effort🫰🫶💘<.`
   }
 };
 
@@ -961,7 +961,7 @@ const finalLines = [
   "I wish I could have one more conversation with the version of you who liked me so much 🥺💘",
   "I came too late to be your first love, but just in time to be the love of your life 💗",
   "I’m not mad because you don’t want me… I’m mad because some days you act like you do, and other days you act like I’m nothing.",
-  "Now that I’m not forcing you to stay with me… if you want to leave, I’ll come with you.",
+  "Now that I’m not forcing you to stay with me… if you want to leave, I’ll come with you 🫰🫶💘<.",
   "I don’t want love that burns fast and disappears. I want one that stays soft, even in hard moments.",
   "I intend to be your last… however long it takes. Be my last, pleaseeeee 🥺💞",
   "Even when we fight… I still want us 🥺",
