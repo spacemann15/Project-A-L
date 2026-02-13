@@ -776,7 +776,6 @@ function showGiftDetail(type){
     giftDetailLabel.textContent = "Teddy Date 🧸";
     giftArt.innerHTML = `<span>🧸</span><span>💃</span><span>🧸</span>`;
     giftMain.textContent = "Teddy date unlocked 😭💘";
-    giftSub.textContent = "We can replace with teddy.gif later.";
   }
 }
 
@@ -955,6 +954,7 @@ const restartBtn = document.getElementById('restartBtn');
 
 const finalLines = [
   "I choose you every time 💗",
+  "Have you ever went back to our old chat and read it again? Please give a try go back december 2025 and read my sweartheart 💗",
   "For each day that passes, it’s another day closer to us getting married 💞",
   "Boyfriend? No. I’m your husband… just not legally yet 😌💘",
   "You already stole my heart… so why not steal my last name? 😳💗",
