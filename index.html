@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Likidha 💘</title>
+
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-layer" id="bgLayer">
+    <div class="glow"></div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modalBack" id="modalBack">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modalClose" id="modalClose">✕</button>
+      <h3 id="modalTitle">Title</h3>
+      <p id="modalText">Text</p>
+
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:10px; flex-wrap:wrap;">
+        <button class="btnBack" id="modalNext" style="display:none;">Next →</button>
+        <button class="btnBack" id="modalOk">Okay 🥹</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="app">
+    <section class="card">
+
+      <!-- Slide 1 -->
+      <div class="slide active" id="s1">
+        <div class="spacer-sm"></div>
+
+        <h1 class="titleScript">
+          Hi <span class="nameLikidha">Likidha</span> 💗
+        </h1>
+
+        <div class="sub" style="font-size:18px; margin-bottom: 10px;">
+          Your <span class="nameAjith" style="font-weight:900;">Ajith</span> here 😌✨
+        </div>
+
+        <div class="spacer-sm"></div>
+
+        <p class="sub" style="margin: 0 0 12px;">
+          I made this just for you… like proper <b>full effort</b>💘
+        </p>
+
+        <p class="sub" style="margin: 0 0 14px;">
+          A small journey… just for you. <b>No skipping</b> 🙈💞
+        </p>
+
+        <div class="sub" style="font-weight:800; font-size:18px; margin-top:10px;">
+          Okay Kanmani… ready ah? 😳🌙
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" data-next="s2">Next</button>
+        <div class="spacer-md"></div>
+
+        <div class="pill">K-drama mode ON 🎁💜</div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide" id="s2">
+        <h2 class="titleBig">How angry are you on me? 😭</h2>
+
+        <p class="sub" style="margin-top:6px; margin-bottom: 12px;">
+          Scale 1 to 10 (be honest, my Moon 🌙)
+        </p>
+
+        <p class="sub" style="font-size:14px; margin-top:0; margin-bottom: 14px;">
+          okay my moon… don’t go full villain pls 🥺
+        </p>
+
+        <div class="sliderWrap">
+          <div class="sliderLabel">
+            <div>Anger: <span id="angerVal" style="font-weight:900;">5</span>/10</div>
+            <small id="angerMood">soft angry 😗</small>
+          </div>
+          <input id="anger" type="range" min="1" max="10" value="5" />
+          <div class="liveMsg" id="angerMsg">
+            <strong>Message:</strong> Okay okay… I’ll be extra sweet today 😭💘
+          </div>
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" data-next="s3">Next</button>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" id="s3">
+        <h2 class="titleBig">Have you thought of forgiving me and restoring our bond? 💞</h2>
+        <p class="sub">Say yes and I’ll behave like a green-flag hero. Say no and I’ll panic cutely 😭</p>
+
+        <div class="btnRow">
+          <button class="btnYes" id="forgiveYes">Yes 🥹</button>
+          <button class="btnNo" id="forgiveNo">No 😤</button>
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" data-next="s4">Next</button>
+      </div>
+
+      <!-- Slide 4: Incremental Heart -->
+      <div class="slide" id="s4">
+        <h2 class="titleBig">Okay… one small thing 😳💗</h2>
+        <p class="sub">Tap the heart to fill it… 10 taps = full love mode 🫰</p>
+
+        <div class="heartStage">
+          <div class="heartHint" id="heartHint">Tap 10 times 👆</div>
+
+          <div class="heartSvgWrap" id="heartBtn" role="button" aria-label="Tap heart">
+            <svg viewBox="0 0 200 180" class="heartSvg" aria-hidden="true">
+              <defs>
+                <clipPath id="heartClip">
+                  <rect id="heartClipRect" x="0" y="180" width="200" height="0"></rect>
+                </clipPath>
+              </defs>
+
+              <!-- Fill -->
+              <path class="heartFill"
+                clip-path="url(#heartClip)"
+                d="M100 170s-60-36-85-72C-7 65 10 35 35 25c18-7 40 0 54 18c14-18 36-25 54-18c25 10 42 40 20 73c-25 36-85 72-85 72z"
+              />
+
+              <!-- Outline -->
+              <path class="heartOutline"
+                d="M100 170s-60-36-85-72C-7 65 10 35 35 25c18-7 40 0 54 18c14-18 36-25 54-18c25 10 42 40 20 73c-25 36-85 72-85 72z"
+              />
+            </svg>
+          </div>
+
+          <div class="heartProgress" id="heartProgress">0%</div>
+
+          <div class="liveMsg heartMsg" id="heartMsg">
+            <strong>Message:</strong> First tap… okay okay 😭💘
+          </div>
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" id="heartNext" style="display:none;" data-next="s5">Next</button>
+      </div>
+
+      <!-- Slide 5: Valentine -->
+      <div class="slide" id="s5">
+        <h2 class="titleBig">Will you be my future Valentine, <span class="nameLikidha">Likidha</span>? 💘</h2>
+
+        <p class="sub" style="margin-top:6px;">
+          Okay my Moon 🌙… if you press <b>NO</b> once, I’ll act cute and chase you 😭💜
+        </p>
+        <p class="sub" style="font-weight:800; font-size:18px; margin-top:6px;">
+          (NO will start escaping only after your first NO click 😌)
+        </p>
+
+        <div class="btnRow">
+          <button class="btnYes" id="valYes">YES 😭💚</button>
+          <button class="btnNo" id="noBtn">No 😭</button>
+        </div>
+
+        <div class="liveMsg" id="valMsg" style="max-width:780px; margin: 14px auto 0;">
+          Kanmani… press YES like a good girl 😭💘
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" id="valNext" style="display:none;" data-next="s6">Next</button>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="slide" id="s6">
+        <h2 class="titleBig">Yessss 😭💘 Mini celebration time!</h2>
+        <p class="sub">Cute couple teddy dance for my BTS queen + crystal girl ✨🧿</p>
+
+        <div class="teddyStage">
+          <div class="teddy">🧸</div>
+          <div class="teddy">💃🧸</div>
+          <div class="teddy">🧸🕺</div>
+        </div>
+
+        <div class="liveMsg" style="max-width:780px; margin: 12px auto 0;">
+          <strong>Achievement unlocked:</strong> “K-drama couple confirmed” 🎬💜
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" data-next="s7">Next</button>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="slide" id="s7">
+        <h2 class="titleBig">I want to complete all 9 chapters of love with you 💗</h2>
+        <p class="sub">
+          Each tile is a secret letter 💌 <br/>
+          <b>Tip:</b> Tap each tile 3 times (💌 → chapter → secret)
+        </p>
+
+        <div class="chapGrid" id="chapGrid"></div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" data-next="s8">Next</button>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="slide" id="s8">
+        <h2 class="titleBig">Choose your gift 🎁</h2>
+        <p class="sub">Pick one… or all 😌💘</p>
+
+        <div class="giftRow" id="giftRow">
+          <div class="gift" data-gift="flowers">
+            <div class="giftIcon">🌹</div>
+            <div class="giftName">Flowers</div>
+            <div class="chapHint">Tap for surprise</div>
+          </div>
+          <div class="gift" data-gift="voice">
+            <div class="giftIcon">🎤</div>
+            <div class="giftName">My Voice</div>
+            <div class="chapHint">2 songs inside</div>
+          </div>
+          <div class="gift" data-gift="teddy">
+            <div class="giftIcon">🧸</div>
+            <div class="giftName">Teddy Date</div>
+            <div class="chapHint">Tap for cute</div>
+          </div>
+        </div>
+
+        <!-- Gift Detail View -->
+        <div class="giftDetail" id="giftDetail">
+          <div class="giftDetailTitle">
+            <div id="giftDetailLabel">Flowers 🌸</div>
+            <button class="btnBack" id="giftBack">Back</button>
+          </div>
+
+          <div class="giftArt" id="giftArt">
+            <span>🌹</span>
+            <span>🌸</span>
+            <span>💐</span>
+          </div>
+
+          <div class="giftDetailMain" id="giftMain">For my Kanmani 💗</div>
+          <div class="giftDetailSub" id="giftSub">A little bouquet… until I give you the real one 😌</div>
+
+          <!-- Voice controls (only shown on voice gift) -->
+          <div class="voiceControls" id="voiceControls" style="display:none;">
+            <div class="voiceTitle">🎧 Pick a song</div>
+            <div class="voiceBtns">
+              <button class="btnBack" id="track1Btn">Play: Azhagiye</button>
+              <button class="btnBack" id="track2Btn">Play: Kadhaal</button>
+              <button class="btnBack" id="pauseBtn">Pause</button>
+            </div>
+            <div class="voiceNote">Tip: audio plays only when you tap (no autoplay).</div>
+          </div>
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" id="giftNext" data-next="s9">Next</button>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="slide" id="s9">
+        <h2 class="titleBig">A message for you 💌</h2>
+        <p class="sub">Tap a card to open. (You can replace text later.)</p>
+
+        <div class="msgList" id="msgList">
+          <div class="msgTile" data-msg="1"><span>Message 1</span><small>→</small></div>
+          <div class="msgTile" data-msg="2"><span>Message 2</span><small>→</small></div>
+          <div class="msgTile" data-msg="3"><span>Message 3</span><small>→</small></div>
+          <div class="msgTile" data-msg="4"><span>Message 4</span><small>→</small></div>
+          <div class="msgTile" data-msg="5"><span>Message 5</span><small>→</small></div>
+          <div class="msgTile" data-msg="6"><span>Message 6</span><small>→</small></div>
+          <div class="msgTile" data-msg="7"><span>Message 7</span><small>→</small></div>
+        </div>
+
+        <div class="msgView" id="msgView">
+          <h3 id="msgTitle">Message</h3>
+          <p id="msgBody">Text</p>
+          <div class="btnRow" style="justify-content:flex-start;">
+            <button class="btnBack" id="msgBack">← Back</button>
+          </div>
+        </div>
+
+        <div class="spacer-md"></div>
+        <button class="btnNext" id="msgNextSimple" data-next="s10">Next</button>
+      </div>
+
+      <!-- Slide 10 -->
+      <div class="slide" id="s10">
+        <h2 class="titleBig">One last thing 🤍</h2>
+        <p class="sub">Tap “Next” for the next line…</p>
+
+        <div class="liveMsg" id="finalLine" style="max-width:820px; margin: 14px auto 0; font-size:20px;">
+          <strong>I choose you every time</strong> 💗
+        </div>
+
+        <div class="spacer-md"></div>
+
+        <div class="btnRow" style="gap:10px;">
+          <button class="btnNext" id="finalNext">Next</button>
+          <button class="btnBack" id="restartBtn">Start again 🔁</button>
+        </div>
+
+        <div class="spacer-sm"></div>
+        <p class="sub" style="font-weight:900;">
+          Thank you <span class="nameLikidha">Likidha</span> for coming into my life 🥺🌙
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="./assets/script.js" defer></script>
+</body>
+</html>
