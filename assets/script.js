@@ -24,7 +24,17 @@ const words = [
   "k-drama mode 🎬","saranghae 💞","보고싶어 🥺","사랑해 💗",
   "🫰","🫶","💘","✨","🌙","☀️","⭐","💎",
   `"Likidha - Like Ajith cooking skills, mature boi, sweet heart"`,
-  `"Gem 💎"`,
+  `"Likidha - Im soooooo happppyyyyyyy that you called me🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🫰🫰🫰🫰🫰🫰🫰🫶🫶🫶🫶🫶🫶"`,
+  `"Likidha - Na rombaaa surprised plus happy ah irundhe...we got to see virtually nu. Nanne yosichutu irundhe ena pesuradhu starting nu...yosichute phone pathe...nee call panningaa🥺🥺🥰"`,
+  `"Likidha - U are still good looking. Im not sure about what u mean about great human being. As for as I know, you are good to me, ur and my family."`,
+  `"Likidha - I wish you were here but it's totally fine. I will be less nervous lol😂😂"`,
+  `"Likidha - Enaku cooking theriyadhu nu frnd solitu irundha...apo dan sonne like u know cooking..later nannu kathupenu"`,
+  `"Likidha - Lol epdiiii..idhu dan nannu yosichutu irundhe"`,
+  `"Likidha - Ur mom would be proud of you...nengale ellame handle panradh"`,
+  `"Likidha - Lol you are a gem🥺🥺🥺....ellame theriyum polaiyeee"`,
+  `"Ajith - I'm glad that I meet u. Actually I felt special when u said u enaku call panirukalam la ( while I'm telling dad I cried while giving blood)"`,
+  `"Ajith - Take ur time no issue. Ask million questions to mee.i want full you not the half"`,
+  `"My Gem 💎"`,
   "en uyire","thangam","chellam","kanna","pattu",
   "ente sundari","ente ponne","njan ninne","umma 😘",
   "forever ♾️","our story 📖","my girl 💞","my boy 💙"
@@ -811,13 +821,108 @@ const msgBackBtn = document.getElementById('msgBack');
 const msgNextSimple = document.getElementById('msgNextSimple');
 
 const messages = {
-  1: { title:"My Moon 🌙", body:"Even if you’re angry… I still want to understand you, not fight you. I’m learning." },
-  2: { title:"BTS queen 💜", body:"If BTS can rehearse 1000 times, I can also do 1000 efforts for you 😭💘" },
-  3: { title:"Crystal girl ✨", body:"You’re rare. Like that one crystal people keep safe… I’ll keep you safe too." },
-  4: { title:"Kanmani 😳", body:"When you say my name… my whole system reboots 😵‍💫💗" },
-  5: { title:"Forever ♾️", body:"Not perfect love. But consistent love. That’s what I want with you." },
-  6: { title:"Gem 💎", body:"You’re a gem. And I’m not letting anyone dim your shine. Ever." },
-  7: { title:"Mature boi 🍳", body:"I’ll keep improving… cooking, caring, communicating. Full effort only 😌💘" }
+  1: {
+    title: "My Moon 🌙",
+    body: `Maybe the wait is longer. But if the destination is you, I don’t mind the time or the distance.
+
+I never tell you this but I don’t want to find someone better. I don’t care about perfect people or what the world says I deserve because for me you are enough.
+
+I don’t want to replace you. I just want us to be better. Better at understanding, better at holding each other, better at fighting for this love instead of fighting with each other. Better at growing together.
+
+And I choose you not once, not twice, but every single time.
+
+I don’t want a new story. I just want to make our story stronger, more beautiful, and forever lasting.`
+  },
+
+  2: {
+    title: "BTS queen 💜",
+    body: `Hey Babe, I know I mess up a lot and say the wrong things sometimes, but trust me, you’re an important person in my life.
+
+When I say sorry, I truly mean it, not just to fix things but because I hate hurting you.
+
+I never want you to doubt your place in my heart.
+
+Just a small reminder — I love you 💘`
+  },
+
+  3: {
+    title: "Crystal girl ✨",
+    body: `One thing I genuinely value is clear communication.
+
+If you’re busy, say that. I’ll respect it.
+
+But don’t leave me guessing.
+
+I’d rather hear the truth than feel ignored.`
+  },
+
+  4: {
+    title: "Kanmani 🥺",
+    body: `I may never be able to tell you this.
+
+You were never a choice. You were the decision I made without fear.
+
+Not because loving you was easy, but because leaving you never felt right.
+
+Some people come into our lives as options — temporary, uncertain, replaceable.
+
+But then someone arrives as an answer.
+
+An answer to the chaos, the confusion, the waiting.
+
+And once you find that kind of love, you don’t look for better — you just choose deeper. 🥺💞`
+  },
+
+  5: {
+    title: "Forever ♾️",
+    body: `Not perfect love. But consistent love. That’s what I want with you.
+
+I got attached so fast because you were the first person to make me feel a spark after being in the dark for so long.
+
+I’m humble enough to know I’m replaceable, but confident enough to know my soul is genuine.
+
+And you won’t find that anywhere easily.`
+  },
+
+  6: {
+    title: "Kanmani 🥺 (Marriage One)",
+    body: `One day I’ll marry you, and we’ll build a life from small things that only make sense to us.
+
+Inside jokes, shared prayers, quiet nights, and long talks when sleep doesn’t come.
+
+We’ll mess up sometimes, learn each other slowly, and grow together through it all.
+
+Life won’t always be easy, but I know this much:
+
+I will keep choosing you even on the hard days.
+
+That’s my promise.
+
+That’s my forever. 💗`
+  },
+
+  7: {
+    title: "My Sun 🌙",
+    body: `Before you think of walking away from me, pause for a moment.
+
+Go back to the first time we met or talked. The way your heart felt lighter.
+
+Remember the first time I made you smile without even trying.
+
+The conversation that made us feel seen.
+
+The moments that felt safe, gentle, and rare.
+
+Now ask yourself: do you really want to let me go?
+
+Is this connection truly worthless, or are you just tired?
+
+Think about the nights I held you, the plans we made together, the version of you that was happiest.
+
+Are you sure you want to live without the me who once felt like home?
+
+Sometimes it’s not the relationship that’s broken — it’s the communication, the understanding, and the effort.`
+  }
 };
 
 msgList.addEventListener('click', (e)=>{
